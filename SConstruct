@@ -84,7 +84,7 @@ HOST_ENVIRONMENT.Replace(ASCOMSTR        = "Assembling [$SOURCE]",
 
 platform_prefix = ''
 if HOST_ENVIRONMENT['arch'] == 'i686':
-    platform_prefix = 'i686-elf-'
+    platform_prefix = '/home/raghav/Raghav/Toolchain/i686-elf/bin/i686-elf-'
 
 toolchainDir = Path(HOST_ENVIRONMENT['toolchain'], platform_prefix.removesuffix('-')).resolve()
 toolchainBin = Path(toolchainDir, 'bin')
